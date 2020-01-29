@@ -38,8 +38,6 @@ public class Server {
                 pipeline.addLast(new OrderProtocoEncoder());
                 pipeline.addLast(new LoggingHandler(LogLevel.INFO));
                 pipeline.addLast(new OrderServerProcessHandler());
-
-
             }
         });
 
